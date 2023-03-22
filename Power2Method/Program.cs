@@ -25,6 +25,19 @@ namespace Power2Method
         }
 
         /// <summary>
+        /// Print the powers of 2 from 2^n1 to 2^n2
+        /// </summary>
+        /// <param name="n1">Minimum power of 2</param>
+        /// <param name="n2">Maximum power of 2</param>
+        private static void PowersOf2UntilN(int n1, int n2)
+        {
+            for (int i = (1 << n1); i <= (1 << n2); i = i << 1)
+            {
+                Console.WriteLine(i);
+            }
+        }
+
+        /// <summary>
         /// Main code
         /// </summary>
         /// <param name="args">Array of strings from the command line</param>
