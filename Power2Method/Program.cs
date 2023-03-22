@@ -48,6 +48,9 @@ namespace Power2Method
 
             PowersOf2UntilN(7);
             PowersOf2UntilN(2);
+
+            PowersOf2UntilN(4, 6);
+            PowersOf2UntilN(9, 10);
         }
     }
 }
