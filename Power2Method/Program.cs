@@ -14,7 +14,8 @@ namespace Power2Method
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            PowersOf2Until5();
+            PowersOf2Until5();
         }
     }
 }
