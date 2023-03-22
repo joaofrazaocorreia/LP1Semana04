@@ -6,27 +6,31 @@ namespace Lucas
     {
         private static int Lucas(int n)
         {
+            int number;
+
             if (n==0)
             {
-                int number = 1;
+                number = 2;
             }
 
             else if (n==1)
             {
-                int number = 2;
+                number = 1;
             }
 
             else
             {
-                int number = (n - 1) + (n - 2);
+                number = Lucas(n - 1) + Lucas(n - 2);
             }
 
             return number;
         }
-        
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine(Lucas(0));
+            Console.WriteLine(Lucas(2));
+            Console.WriteLine(Lucas(7));
         }
     }
 }
