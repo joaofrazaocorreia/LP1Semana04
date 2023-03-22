@@ -28,11 +28,9 @@ namespace Lucas
 
         static void Main(string[] args)
         {
-            Console.Write("Insert the index of the sequence of Lucas: ");
-            int input = int.Parse(Console.ReadLine());
+            int input = int.Parse(args[0]);
 
-            Console.WriteLine("\n"+Lucas(input)+" is the number on the "+
-                              "sequence with index "+ input);
+            Console.WriteLine("\n"+Lucas(input));
         }
     }
 }
